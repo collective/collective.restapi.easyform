@@ -14,5 +14,15 @@
     layer="..interfaces.ICollectiveRestapiEasyformLayer"
     />
 
+  <plone:service
+    method="POST"
+    for="collective.easyform.interfaces.IEasyForm"
+    factory=".post.EasyFormPost"
+    name="@form"
+    permission="zope2.View"
+    layer="..interfaces.ICollectiveRestapiEasyformLayer"
+    />
+
+
 
 </configure>
