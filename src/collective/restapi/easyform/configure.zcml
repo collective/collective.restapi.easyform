@@ -14,6 +14,7 @@
   <!--<includeDependencies package="." />-->
 
   <include file="permissions.zcml" />
+  <include package=".services" />
 
   <genericsetup:registerProfile
       name="default"

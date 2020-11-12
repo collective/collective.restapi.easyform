@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.restapi.pfg">
+
+  <plone:service
+    method="GET"
+    for="collective.easyform.interfaces.IEasyForm"
+    factory=".get.EasyFormSchemaGet"
+    name="@form"
+    permission="zope2.View"
+    layer="..interfaces.ICollectiveRestapiEasyformLayer"
+    />
+
+
+</configure>
